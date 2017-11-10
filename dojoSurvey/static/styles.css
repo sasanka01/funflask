@@ -1,7 +1,13 @@
-#wrapper {
-  width: 50px;
+.wrapper {
+  width: 970px;
 }
 
+
 h1 {
-  color: red;
+    color: red;
+}
+
+
+p {
+  color: green;
 }
