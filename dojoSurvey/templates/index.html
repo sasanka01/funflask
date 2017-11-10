@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dojo Landing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="" action="/result" method="post">
+        Your Name:<input type="text" name="name" value="">
+        Dojo Location: <select class="" name="location">
+          <option value=""></option>
+          <option value="SJ">San Jose</option>
+          <option value="Seattle">Seattle</option>
+          <option value="NY">New York</option>
+          <option value="LA">Los Angeles</option>
+        </select>
+        Favorite Language: <select class="" name="language">
+          <option value=""></option>
+          <option value="Python">Python</option>
+          <option value="Ruby">Ruby</option>
+          <option value="C#">C#</option>
+        </select>
+        <p>Comment (optional):</p>
+        <textarea name="comment" rows="8" cols="80"></textarea>
+
+
+        <input type="submit" name="" value="Button">
+      </form>
+    </div>
+  </body>
+</html>
