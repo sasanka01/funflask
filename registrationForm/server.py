@@ -35,13 +35,11 @@ def submit():
         elif lname.isalpha() == False:
             flash("Lastname should only contain alphabets",'error')
 
-
         if len(password) < 1:
             flash("Please enter a password",'error')
 
         elif len(password) < 8:
             flash("Please choose a password which has more than 8 chars",'error')
-
 
         if password != conpass:
             flash("Please make sure Password and confirm Password are the same",'error')
