@@ -6,13 +6,6 @@
   </head>
   <body>
     <div class="wrapper">
-      {% with messages = get_flashed_messages() %}
-        {% if messages %}
-          {% for message in messages %}
-            <p>{{message}}</p>
-          {% endfor %}
-        {% endif %}
-      {% endwith %}
       <form class="" action="/result" method="post">
         Your Name: <input type="text" name="name" value="">
         <br>
@@ -30,6 +23,13 @@
         <br>
         <p>Comment (optional)</p>
         <textarea name="comment" rows="8" cols="80"></textarea>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            {% for message in messages %}
+              <p>{{message}}</p>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
         <br>
         <input type="submit" name="" value="Button">
       </form>
