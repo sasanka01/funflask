@@ -5,6 +5,7 @@
     <title>Ninja Gold</title>
   </head>
   <body>
+    <h1>Total Gold is {{session['gold']}}</h1>
     <fieldset>
       <form class="" action="/process_money" method="post">
         <h3>Farm</h3>
@@ -39,8 +40,8 @@
     </fieldset>
     <h3>Activties log</h3>
     <div id="log">
-   {% for i in log | reverse %}
-     <p>{{i['time']}} ( {{i['state']}} )</p>
+   {% for result in session['log'] %}
+     <p>{{result}}</p>
    {% endfor %}
  </div>
   </body>
